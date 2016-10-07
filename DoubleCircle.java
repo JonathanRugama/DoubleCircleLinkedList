@@ -1,8 +1,6 @@
 import javax.swing.JOptionPane;
 
-/********************************************************************
- * Written by: tinthetub
- *  
+/******************************************************************** 
  *  NOTES:  A doubly linked list is created with the DoubleListNode 
  *  class which has 2 pointers - a next  and a previous.  The
  *  previous pointer points to the node before it in the linked 
@@ -20,9 +18,6 @@ import javax.swing.JOptionPane;
  *
  *	V W X Y Z A B C D E F G H I J K L M N O P Q R S T U 
  *	V U T S R Q P O N M L K J I H G F E D C B A Z Y X W
- *
- * HAND IN:  Make a jar file of your program, print and put 
- * your jar file in the hand in folder.
  *
 *****************************************************************/
 public class DoubleCircle 
