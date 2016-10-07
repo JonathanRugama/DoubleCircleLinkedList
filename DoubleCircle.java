@@ -1,7 +1,7 @@
 import javax.swing.JOptionPane;
 
 /********************************************************************
- * Written by: Ramsey Hatoum
+ * Written by: tinthetub
  *  
  *  NOTES:  A doubly linked list is created with the DoubleListNode 
  *  class which has 2 pointers - a next  and a previous.  The
