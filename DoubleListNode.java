@@ -1,16 +1,3 @@
-/******************************************************************************
-Class name:  DoubleListNode
-
-ListNode modified by:  Hadley Steelman
-
-Saved as: DoubleListNode.java
-
-Other files:
-		none
-
-******************************************************************************/
-
-
 public class DoubleListNode<T>
 {
 	// instance properties
