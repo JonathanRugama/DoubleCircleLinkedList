@@ -29,34 +29,34 @@ public class DoubleCircle
 		DoubleListNode<Character> tail = null;
 		
 		DoubleListNode<Character> p = null; 
-	    for(char c = 'A'; c <= 'Z'; c++) {
-	        p = new DoubleListNode<Character>(c, null, null);        
-	        if (head == null)
-	        {
-	            p.setNext(p);
-	            p.setPrevious(p);
-	            head = p;
-	            tail = head;
-	        }
-	        else
-	        {
-	            p.setPrevious(tail);
-	            tail.setNext(p);
-	            head.setPrevious(p);
-	            p.setNext(head);
-	            head = p;    
-	        }
+	    	for(char c = 'A'; c <= 'Z'; c++) {
+	            p = new DoubleListNode<Character>(c, null, null);        
+	            if (head == null)
+	            {
+	            	p.setNext(p);
+	            	p.setPrevious(p);
+	            	head = p;
+	            	tail = head;
+	            }
+		    else
+		    {
+		        p.setPrevious(tail);
+			tail.setNext(p);
+			head.setPrevious(p);
+			p.setNext(head);
+			head = p;    
+		     }
 		} 
         
-	    String front = front(p, ch);
-        String back = back(p, ch);
+	        String front = front(p, ch);
+                String back = back(p, ch);
         
-        JOptionPane.showMessageDialog(null, front + "\n" + back);
+                JOptionPane.showMessageDialog(null, front + "\n" + back);
 	}
 	
 	public static String front(DoubleListNode<Character> list, char value) {
-		  String str = "";
-		  DoubleListNode<Character> first = null;
+	      String str = "";
+              DoubleListNode<Character> first = null;
 		    
 	      while(first == null) 
 	      {
@@ -77,12 +77,12 @@ public class DoubleCircle
 	          list = list.getPrevious();
 	       }   
 	          
-		  return str; 
-    }
+	       return str; 
+        }
 	
 	public static String back(DoubleListNode<Character> list, char value) {
-		  String str = "";
-		  DoubleListNode<Character> first = null;
+	      String str = "";
+	      DoubleListNode<Character> first = null;
 		    
 	      while(first == null) 
 	      {
@@ -102,11 +102,11 @@ public class DoubleCircle
 	    	  }
 	          list = list.getNext();
 	       }   
-	          
-		  return str;  
-  }
+		
+	       return str;  
+          }
 }
-/*
+/* Output for Input 'V': 
 V W X Y Z A B C D E F G H I J K L M N O P Q R S T U 
 V U T S R Q P O N M L K J I H G F E D C B A Z Y X W 
 */
